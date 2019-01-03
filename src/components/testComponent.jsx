@@ -1,10 +1,21 @@
 import React, {Component } from 'react';
 
 class TestComp extends Component {
-    //state={}
+    state={
+        count: 1
+    };
+
     render(){
         
-        return ( <h1>This is a React Component</h1>)
+        return (
+
+        <div><span>{this.formatCount()}</span>
+        <button>Press Me</button></div>
+        );
+    }
+    formatCount() {
+        const {count} = this.state;
+        return count === 0 ? "Zero" : count;
     }
 }
 
