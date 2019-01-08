@@ -2,20 +2,34 @@ import React, {Component } from 'react';
 
 class TestComp extends Component {
     state={
-        count: 1
+        count: 0,
+        imageURL: 'http://picsum.photos/200'
+    };
+
+    styles = {
+        fontSize: "15px",
+        fontWeight: "bold",
+        margin: "5px"
+        
     };
 
     render(){
         
         return (
 
-        <div><span>{this.formatCount()}</span>
-        <button>Press Me</button></div>
+        <div>
+            <img src = {this.state.imageURL} />
+            <span style = {this.styles}>{this.formatCount()}</span>
+            <button>Press Me</button>
+            <span className= "test_box1">Pull Data</span>
+        </div>
         );
     }
     formatCount() {
         const {count} = this.state;
-        return count === 0 ? "Zero" : count;
+        const z = "Zero";
+        
+        return count === 0 ? z : count;
     }
 }
 

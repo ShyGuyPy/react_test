@@ -1,6 +1,6 @@
 import React, {Component } from 'react';
 
-class TestComp extends Component {
+class TestComp2 extends Component {
     //state={}
     render(){
         
@@ -8,4 +8,4 @@ class TestComp extends Component {
     }
 }
 
-export default TestComp;
+export default TestComp2;
