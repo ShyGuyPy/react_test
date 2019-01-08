@@ -3,7 +3,8 @@ import React, {Component } from 'react';
 class TestComp extends Component {
     state={
         count: 0,
-        imageURL: 'http://picsum.photos/200'
+        imageURL: 'http://picsum.photos/200',
+        imageURL2: 'http://picsum.photos/200'
     };
 
     styles = {
@@ -18,7 +19,7 @@ class TestComp extends Component {
         return (
 
         <div>
-            <img src = {this.state.imageURL} />
+            <img src = {this.state.imageURL2} />
             <span style = {this.styles}>{this.formatCount()}</span>
             <button>Press Me</button>
             <span className= "test_box1">Pull Data</span>

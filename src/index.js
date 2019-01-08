@@ -12,6 +12,8 @@ const test2 = <p2>this is also a test</p2>
 
 ReactDOM.render(<TestComp/>, document.getElementById('root'))
 
+
+
 //ReactDOM.render(<TestComp2/>, document.getElementById('root'))
 
 //ReactDOM.render(element, document.getElementById('root'))
