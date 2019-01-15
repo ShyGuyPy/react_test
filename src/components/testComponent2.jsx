@@ -4,7 +4,12 @@ class TestComp2 extends Component {
     //state={}
     render(){
         
-        return <p>This is also a React Component</p>
+        return(
+            <div>
+                <p>This is also a React Component</p>
+            </div>
+             
+        )
     }
 }
 
